@@ -1,39 +1,27 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
-# If you change this file, please restart the server process.
+title: no style, please! # name of the site
+author: Riccardo Graziosi # name of site's author
+email: riccardo.graziosi97@gmail.com # email of site's author
+url: https://riggraz.dev # root address of the site
+baseurl: "/no-style-please" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+description: > # description of the site (multiple lines allowed)
+  A (nearly) no-CSS, fast, minimalist Jekyll theme.
 
-# Site settings
-# are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+permalink: /:slug.html
 
-theme: jekyll-agency
+favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
 
-title      : Your Awesome Website
-email      : your-email@example.com #this is also the email contact forms will go to
-description: "Site description"
-author     : Your Name
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+sass:
+  style: :compressed
 
-analytics:
-  google: #Google Analytics tracking code here
-
-collections:
-  portfolio:
-
-markdown: kramdown
-
-# Uncomment following line to use Formspree form ID based URL instead of email based URL
-# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
-# formspree_form_path: "f/a_form_id"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-{% include navheader.html %}
+<header>
+  <h1>{{ site.title }}</h1>
+  {%-if site.theme_config.show_description-%}
+    <p>{{ site.description }}</p>
+  {%-endif-%}
+</header>
 
-{% include services.html %}
-{% include portfolio_grid.html %}
-{% include timeline.html %}
-{% include team.html %}
-{% include clients.html %}
-{% include contact.html %}
+{%-include menu_item.html collection=site.data.menu.entries-%}
+
+{{ content }}

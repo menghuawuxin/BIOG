@@ -1,128 +1,123 @@
-# Agency Jekyll Theme | [Live Demo](https://raviriley.github.io/agency-jekyll-theme-starter/)
-[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/raviriley/agency-jekyll-theme/blob/master/LICENSE.txt)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/raviriley)
-[![template button](https://img.shields.io/badge/-Generate%20theme%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
-[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
+# no style, please!
 
-![screenshot](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme/master/screenshot.PNG)
+<img src="https://raw.githubusercontent.com/riggraz/no-style-please/master/logo.png" width="64" align="left" />A (nearly) no-CSS, fast, minimalist [Jekyll](https://jekyllrb.com/) theme.
+Inspired by [elly's site](http://tilde.town/~elly/), expressly created for [my personal blog](https://riggraz.dev/).
 
->  :warning:  **Notice to those using legacy Formspree contact forms:** :warning: <br>
-Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
+<h3 align="center"><a href="https://riggraz.dev/no-style-please/">Try the demo out!</a></h3>
 
+<img src="https://raw.githubusercontent.com/riggraz/no-style-please/master/_screenshots/featured-image.png" />
 
-This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/) converted to a gem-based Jekyll theme with GitHub Pages support. While this had been done before, ([here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/)), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source. I also added a lot of new features that go beyond the original theme's capabilities:
+## Features
 
-- GitHub Pages support
-- [template repo][template] to get up and running in minutes
-- contact form functionality powered by [Formspree.io](https://formspree.io)
-- custom pages
-- 404 page
-- legal/Privacy Policy page
-- Google Analytics support
-- Markdown support
-- custom images
-- logo support (instead of just title text)
-- automatically updating copyright years
-- custom navigation bar, even without the header image(s)
-- customizable footer
-- custom accent color and dark/light colors
-- horizontal scrolling support for client section
-<!-- 
-- custom colors with automatic gradient generation (coming soon)
-- site title logo text font customization (coming soon)
-- horizontal scrolling support for portfolio section (coming soon)
-- about section (different from the timeline) -->
-
-The Jekyll structure of this theme includes:
-
-- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
-- the `page` layout allows custom pages, as seen in the legal and 404 pages
-- `sitetext.yml` enables complete customization of all site text
-- `navigation.yml` enables fully customizable navigation
-- `style.yml` enables fully customizable colors, background images, and other style-related things
-
-
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
-
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
+* Fast (**1kb of CSS!** For more information on performance and more, see [Page Speed Insights report](https://raw.githubusercontent.com/riggraz/no-style-please/master/_screenshots/page-speed-insights-report.png) and [Lighthouse report](https://raw.githubusercontent.com/riggraz/no-style-please/master/_screenshots/lighthouse-report.png))
+* Light, dark and auto modes
+* Responsive
+* Content first (typography optimized for maximum readability)
+* SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
+* RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
+* Fully compatible with [GitHub Pages](https://pages.github.com/) (see [GitHub Pages installation](#github-pages-installation))
 
 ## Installation
-There are three ways to install this theme:
-1. As a gem-based theme
-2. Use the [starter template][template]  (best for GitHub Pages)
-3. As a remote theme
 
-#### 1. Gem-based Theme Installation
+If you haven't already created your blog using Jekyll, follow the [instructions](https://jekyllrb.com/docs/) to do so from Jekyll's documentation.
 
-Add this line to your Jekyll site's `Gemfile`:
+NOTE: if you are using Jekyll with GitHub Pages, see the [GitHub Pages installation section](#github-pages-installation).
+
+Then, to style your blog with this theme, add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-agency"
+gem "no-style-please"
 ```
 
-Then, replace the contents of your `_config.yml` file with [this](https://github.com/raviriley/agency-jekyll-theme/blob/master/_config.yml).
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: no-style-please
+```
 
 And then execute:
 
     $ bundle
 
-Or, install it yourself as:
+Or install it yourself as:
 
-    $ gem install jekyll-agency
+    $ gem install no-style-please
 
-#### 2. Using the [Starter Template][template]
-This is the fastest and easiest way to get up and running on GitHub Pages.
-Simply generate your own repository by clicking the button below, then replace the sample content with your own and configure for your needs.
+### GitHub Pages installation
 
-[![template button](https://img.shields.io/badge/-Create%20repository%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
+If you want to use this theme for your Jekyll's site deployed on [GitHub Pages](https://pages.github.com/), follow the instructions on [this page](https://docs.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll#adding-a-theme).
 
-#### 3. Remote Theme Installation
+## Usage
 
-Replace the contents of your `_config.yml` file with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml) and your `Gemfile` with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile). Then execute:
+You can edit `_config.yml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `_config.yml` contains some comments to help you understand what each field does.
 
-    $ bundle
+For further customization (e.g. layout, CSS) see the [official Jekyll's documentation](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) on customizing gem-based themes.
 
+### Customize the menu
 
-[template]: https://github.com/raviriley/agency-jekyll-theme-starter
+In order to add/edit/delete entries from the main menu, you have to edit the `menu.yml` file inside `_data` folder. Through that file you can define the structure of the menu. Take a look at the default configuration to get an idea of how it works and read on for a more comprehensive explanation.
 
-<!--
-## Documentation and Usage
+The `menu.yml` file accepts the following fields:
 
-**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
+- `entries` define a new unordered list that will contain menu entries
+- each entry is marked by a `-` at the beginning of the line
+- each entry can have the following attributes:
+    - `title`, which defines the text to render for this menu entry (**NB: you can also specify HTML!**)
+    - `url`, which can be used to specify an URL for this entry. If not specified, `title` will be rendered as-is; otherwise `title` will be sorrounded by a link tag pointing to the specified URL. Note that the URL can either be relative or absolute. Also note that you can get the same result by placing an ```<a>``` tag in the `title` field.
+    - `post_list`, which can be set either to `true` or to an object. If it is true, the entry will have a list of all posts as subentries. This is used to render your post list. If you want to customize which posts to render (e.g. by category), you can add one or more of the following attributes under `post_list`:
+        - `category`, which can be set to a string. It is used to render a list of posts of the specified category only. If you don't set it, then posts of all categories will be rendered.
+        - `limit`, which can be set to a number. It specifies the number of posts to show. If not set, all posts will be rendered.
+        - `show_more`, which can be true. If it is true and if the number of posts to show is greater than the specified `limit`, render a link to another page. To specify the URL and the text of the link, you can set `show_more_url` and `show_more_text` attributes, which are documented below.
+        - `show_more_url`, which can be a string. It specifies the URL for the show more link. Use only if `show_more` is true. This will usually redirect to a page containing all posts, which you can easily create using an archive page (see [create archive pages](#create-archive-pages) section)
+        - `show_more_text`, which can be a string. It specifies the text for the show more link. Use only if `show_more` is true.
+    - `entries`, yes, you can have entries inside entries. In this way you can create nested sublists!
 
-navheader is used only for the home page. nav is used everywhere else.
+### Create archive pages
 
-Layouts:
+A so-called archive page is a page that shows a list of posts (see [this](https://riggraz.dev/no-style-please/all-posts) for an example). You can create an archive page by creating a page and putting the following frontmatter:
 
-Includes:
+```
+---
+layout: archive
+title: The title of the page here
+which_category: name-of-category
+---
+```
 
--->
+`which_category` is optional: if you don't put it, then all posts of the blog will be listed; on the other hand, if you specify a category, only posts of that category will be shown.
+
+This feature is particularly useful if used together with the `show_more` attribute in the menu. For example, if you want to limit the number of posts shown in the home page to 5 but add a link to view them all, then you can create an archive page using the method showed above and link to it using the `show_more_url` attribute in `menu.yml`. See [this example](https://github.com/riggraz/no-style-please/blob/master/_data/menu.yml) if you're in doubt.
+
+### Customize the index page
+
+The `index.md` page should use layout `home`, which is the layout that displays the menu. If you want to have some content after the menu, you can just add that content in the `index.md` file, and it will automatically show under the menu.
+
+Another thing you can do to customize the index page is show the description of your blog between the title and the menu. To do this, just edit `_config.yml` and change `theme_config.show_description` to `true`.
+
+### Pro tips
+
+#### Dark mode for images
+
+This theme provides dark mode by inverting all colors of light mode throught the CSS `invert()` function. This approach would also invert the color of all images, but, since this is not the behaviour one would expect, images are not inverted by default.
+
+However, if you would like to force the color inversion on a specific image you can do so by applying `class="ioda"` to that image ("ioda" stands for "invert on dark appearance"). See the image in the [overview post](https://github.com/riggraz/no-style-please/blob/master/_posts/2020-07-07-overview-post.md) for an example of this approach. Note that color inversion will take place only when the theme has dark appearance!
+
+For example, if you have a black and white image it could make sense to invert it in dark mode. On the other hand, a colorful image will probably look bad if inverted.
 
 ## Contributing
 
-This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
-For bug reports, follow the provided template.
-
-#### Improvements - Up for Grabs
-
-- multiple language support (~~Spanish~~, Chinese, Arabic, etc.)
-- customizable background coloring for each section
-- ~~custom background images~~
+Bug reports and pull requests are welcome on GitHub at https://github.com/riggraz/no-style-please. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-To set up your environment to develop this theme, [clone this repo](https://github.com/raviriley/agency-jekyll-theme.git), then run `bundle install`. To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `no-style-please.gemspec` accordingly.
 
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-<!--
-
-## Example Implementations
-
-- [CV Enterprises](https://cventerprises.org)
-- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
-
--->
